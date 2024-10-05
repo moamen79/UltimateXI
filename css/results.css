@@ -1,0 +1,60 @@
+/*
+Author: Moamen Ahmed
+Date: 2023-11-22
+*/
+.search-result-header-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.search-result-back-button {
+    height: 2.5rem;
+    margin-left: 2rem;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.search-result-back-button:hover {
+    opacity: 1;
+}
+
+#player-display-full-name {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    margin: auto;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+#player-display-full {
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--primary-color);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.player-display-full-img {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    border-radius: 1rem 1rem 0 0;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.player-display-full-img:hover {
+    opacity: 1.3;
+    transform: scale(1.15);
+}
+
+#footer-space {
+    height: 10rem;
+}

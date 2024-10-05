@@ -1,0 +1,84 @@
+/*
+Author: Moamen Ahmed
+Date: 2023-10-20
+*/
+
+.leagues-header {
+    margin-top: 3rem;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-weight: 400;
+    text-align: center;
+}
+
+
+#leagues-list {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+
+.league-wrapper {
+    width: 15rem;
+    height: 20rem;
+    background-color: var(--primary-color);
+    border-radius: 5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.league-wrapper::after {
+    content: "";
+    width: 100%;
+    padding: 0;
+    border-radius: 1rem;
+    border-bottom: 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.league-wrapper:hover::after {
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 2rem;
+}
+
+.league-img {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    border-radius: 1rem;
+    opacity: 0.75;
+    transition: all 0.3s ease-in-out;
+}
+
+.league-img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.league-name {
+    text-align: center;
+    margin-top: 5px; 
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.league-name:hover{
+    opacity: 1;
+}
+
+
+.league-wrapper p {
+    transition: all 0.3s ease-in-out;
+    color: var(--text-color);
+    font-weight: 400;
+    transform: scale(0);
+}
+
+
+#footer-space {
+    height: 10rem;
+}

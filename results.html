@@ -1,0 +1,76 @@
+<!--
+Author: Moamen Ahmed
+Last Modification: 2023-11-22
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>UltimateXI Advisor | Search</title>
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/results.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script type="text/javascript" src="js/results.js"></script>
+        <script type="text/javascript" src="js/weather.js"></script>
+        <script type="text/javascript" src="js/worldTime.js"></script>
+
+        <div class="header-wrapper">
+            <img class="header-logo" src="imgs/logo.png" alt="UltimateXI logo">
+
+            <div id="weather-wrapper">
+                <div id="weather-container"></div>
+            </div>
+
+            <div id="clock-wrapper">
+                <div id="world-time-container"></div>
+            </div>
+
+            <nav class="header-nav-wrapper">    
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="leagues.html">Leagues</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="search-result-wrapper">
+            <div class="search-result-header-wrapper">
+                <img class="search-result-back-button" onclick="history.back()" src="imgs/arrow.png" alt="Back">
+                <h1 id="player-display-full-name"></h1>
+            </div>
+           
+
+            <div id="player-display-full">
+                <!--
+                <img src="imgs/mbappe.png" alt="Kylian Mbappe" class="player-display-full-img">
+                -->
+            </div>
+        </div>
+
+        <div id="footer-space"></div>
+
+        <div class="footer-wrapper">          
+            <div class="footer-social">
+                <p class="contact-us"> Contact us on social networks!</p>
+                <a href="https://www.instagram.com"><img class="footer-social-img" src="imgs/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com"><img class="footer-social-img" src="imgs/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.youtube.com"><img class="footer-social-img" src="imgs/youtube.png" alt="Youtube"></a>
+                    <a href="https://www.tiktok.com/"><img class="footer-social-img" src="imgs/tiktok.png" alt="TikTok"></a>
+                    <a href="https://twitter.com/"><img class="footer-social-img" src="imgs/twitter.png" alt="Twitter"></a>
+            </div>
+
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms-conditions.html">Terms and Conditions</a>
+            </div>
+            <p class="footer-copyright"><span>&copy;</span> 2023 UltimateXI Advisor</p>
+        </div>
+    </body>
+</html>

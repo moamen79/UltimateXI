@@ -1,0 +1,187 @@
+/*
+This file is used to store styles for the search page.
+
+Author: Moamen Ahmed
+Date: 2023-11-21
+*/
+
+#search-results-description {
+    width: 30%;
+    margin-left: 10rem;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.search-results-back-button {
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1.2rem;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-results-back-button:hover {
+    opacity: 1;
+}
+
+.search-results-description-text {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.search-results-description-text span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#search-player-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+#player-wrapper {
+    flex: 4;
+}
+
+#filters-wrapper {
+    width: max-content;
+    height: max-content;
+    padding: 2rem 3rem;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#filters-wrapper:hover {
+    color: var(--text-color);
+}
+
+.filters-header-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.filters-header-icon {
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.filters-header-icon:hover {
+    opacity: 1;
+}
+
+.filters-header-text {
+    margin-left: 1rem;
+    font-size: large;
+    font-family: var(--font-family);
+}
+
+.filters-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.filter-item {
+    margin-bottom: 1rem;
+    font-family: var(--font-family);
+    font-size: large;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.filter-item-select select{
+    margin-left: 1rem;
+    border-color: var(--text-color-light);
+    border-radius: 10px;
+    padding: 0.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.filter-item-select select:hover {
+    border-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+.filter-item-select select::after {
+    padding-right: 1rem;
+}
+
+.player-display-quick {
+    width: 60%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.player-display-quick:hover {
+    transform: scale(1.01);
+    color: var(--text-color);
+}
+
+.player-display-quick-name {
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.player-display-quick-img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+}
+
+.player-display-quick-img:hover {
+    opacity: 1;
+}
+
+#filler-search-bottom {
+    height: 10em;
+}
+
+/** Media Queries **/
+@media only screen and (max-width: 1300px) {
+    #search-results-description {
+        width: 40%;
+        margin-left: 5rem;
+    }
+
+    #search-results-wrapper {
+        width: 95%;
+    }
+
+    #filters-wrapper {
+        padding: 1rem 2rem;
+    }
+
+    #filters-wrapper ul li p {
+        font-size: smaller;
+    }
+}
+/** Media Queries **/

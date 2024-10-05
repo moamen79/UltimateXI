@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/*
+Author: Moamen Ahmed
+Date: 2023-10-30
+*/
+
+:root {
+    --primary-color: rgb(0, 0, 0);
+    --primary-color-light: rgb(0, 0, 0);
+    --contact-color:rgb(137, 132, 131);
+    --secondary-color: rgb(98, 200, 140);
+    --text-color: #ffffff;
+    --font-family: 'Inter', sans-serif;
+}
+
+::placeholder {
+    color: var(--contact-color);
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: var(--primary-color-light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior-y: none;
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.header-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-left: 0;
+    background-color: var(--secondary-color);
+}
+#weather-container {
+    margin: auto;
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+#weather-wrapper {
+    padding: 1rem;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px; 
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+
+#world-time-container {
+    margin: auto;
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+#clock-wrapper {
+    padding: 1rem;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px; 
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.header-nav-wrapper ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+}
+
+.header-nav-wrapper ul li {
+    margin-right: 1rem;
+    cursor: pointer;
+    padding: 0px 4px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-nav-wrapper ul li:hover{
+    border-bottom: 2px solid var(--primary-color);
+}
+
+#selected {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.header-nav-wrapper ul li a {
+    text-decoration: none;
+    color: var(--primary-color-light);
+    transition: all 0.3s ease-in-out;
+}
+
+.header-nav-wrapper ul li a:hover {
+    color: var(--primary-color);
+}
+
+.header-logo {
+    cursor: pointer;
+    opacity: 120%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.header-logo:hover {
+    opacity: 100%;
+}
+
+.footer-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-left: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color-light);
+}
+
+.footer-social-img {
+    height: 40px;
+    cursor: pointer;
+    padding: 3px;
+    opacity: 80%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.footer-social-img:hover {
+    opacity: 100%;
+}
+
+.footer-social-img[src$="youtube.png"] {
+    /* Specifically adjusting youtube png image */
+    height: 32px;
+    padding-top: 1px;
+    padding-left: 2px;
+    margin-bottom: 4px;
+}
+
+.footer-links {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-left: 0;
+}
+
+.footer-links-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: var(--primary-color-light);
+    transition: all 0.3s ease-in-out;
+    padding: 5px;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.footer-space-global {
+    height: 0rem;
+}
+
+/** MEDIA QUERIES **/
+@media only screen and (max-width: 1000px) {
+    .header-nav-wrapper ul li {
+        font-size: 16px;
+    }
+
+    .footer-links {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-height: 900px) {
+    .footer-space-global {
+        height: 5rem;
+    }
+}
+/** MEDIA QUERIES **/

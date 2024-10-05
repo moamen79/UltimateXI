@@ -1,0 +1,136 @@
+/*
+Author: Moamen Ahmed
+Date: 2023-11-22
+*/
+/* Add this to your CSS file or style tag */
+#search-bar-wrapper {
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 4rem;
+    font-size: large;
+}
+
+.search-bar-description {
+    text-align: center;
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+.search-bar {
+    background-color: var(--text-color);
+    border-color: var(--secondary-color);
+    border-radius: 50px;
+    padding: 5px 15px;
+    margin-top: 20px;
+}
+
+.search-bar form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar form input[type="text"] {
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    background-color: var(--text-color);
+    text-align: left;
+    font-size: large;
+    color: var(--primary-color);
+}
+
+.search-bar-btn {
+    margin-right: 0px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--primary-color-light);
+    color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.search-bar:hover .search-bar-btn{
+    background-color: var(--primary-color);
+}
+
+
+/**** Popular Players ****/
+.popular-players-wrapper {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.popular-players-header {
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-weight: 400;
+    text-align: center;
+}
+
+#popular-players-list {
+    margin-left: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0rem;
+}
+
+.player-display {
+    margin: 3rem;
+    width: 20rem;
+    border-radius: 4rem;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.player-display:hover {
+    transform: scale(1.1);
+}
+
+.player-display:hover .player-display-name{
+    color: var(--text-color);
+}
+
+.player-display-name {
+    color: var(--text-color);
+    font-family: var(--font-family);
+    transition: all 0.3s ease-in-out;
+    padding: 4px 10px;
+}
+
+.player-display-name-wrapper {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: max-content;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.player-display-underline {
+    width: 0%;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.player-display-name-wrapper:hover .player-display-mini-underline {
+    width: 100%;
+}
+
+.player-display img {
+    height: 20rem;
+    border-radius: 1rem 1rem 0 0;
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+}
+
+.player-display img:hover {
+    opacity: 1;
+}
+/**** Popular Players ****/

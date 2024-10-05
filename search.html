@@ -1,0 +1,139 @@
+<!--
+Author: Moamen Ahmed
+Last Modification: 2023-11-22
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>UltimateXI Advisor | Search</title>
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/search.css">
+        <link rel="stylesheet" type="text/css" href="css/home.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/slider.js" defer></script>
+
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/weather.js"></script>
+        <script type="text/javascript" src="js/worldTime.js"></script>
+
+        <div class="header-wrapper">
+            <img class="header-logo" src="imgs/logo.png" alt="UltimateXI Logo">
+
+            <div id="weather-wrapper">
+                <div id="weather-container"></div>
+            </div>
+
+            <div id="clock-wrapper">
+                <div id="world-time-container"></div>
+            </div>
+
+            <nav class="header-nav-wrapper">    
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="leagues.html">Leagues</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="search-bar-wrapper">
+            <p class="search-bar-description">Search for players</p>
+
+            <div class="search-bar">
+                <form action="search.html" method="get" autocomplete="off">
+                    <input type="text" name="search" placeholder="Search for a player...">
+                    <input class="search-bar-btn" type="submit" value="Search">
+                </form>
+            </div>
+        </div>
+
+        <div id="search-results-description">
+            <img class="search-results-back-button" onclick="history.back()" src="imgs/arrow.png" alt="Back">
+            <p class="search-results-description-text">Showing <span id="search-results-count">0</span> results for <span id="search-results-search-param-label"></span></p>
+        </div>
+
+        <div id="search-player-wrapper">
+            <div id="player-wrapper">
+                
+            </div>
+                
+            <div id="filters-wrapper">
+                <div class="filters-header-wrapper">
+                    <img src="imgs/filter.png" alt="Filter Icon" class="filters-header-icon"> 
+                    <p class="filters-header-text">Filters</p>
+                </div>
+
+                <ul class="filters-list">
+                    <li class="filter-item">
+                        <p class="filter-item-text">Position</p>
+                            <div class="filter-item-select">
+                            <select> 
+                                <option value="at">AT</option>
+                                <option value="gk">GK</option>
+                                <option value="df">DF</option>
+                                <option value="mf">MF</option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <li class="range-slider-container">
+                        <div class="range-slider-control">
+                            <input id="fromSlider" type="range" step="1000" value="1000" min="0" max="15000000"/>
+                            <input id="toSlider" type="range" step="1000" value="2500000" min="0" max="15000000"/>
+                         </div>
+                         <div class="range-slider-form-control">
+                           <div class="range-slider-form-control-container">
+                               <div class="range-slider-form-control-time">Min</div>
+                               <input class="range-slider-form-control-time-input" type="number" id="fromInput" value="1000" min="0" max="15000000"/>
+                             </div>
+                             <div class="range-slider-form-control-container">
+                               <div class="range-slider-form-control-time">Max</div>
+                               <input class="range-slider-form-control-time-input" type="number" id="toInput" value="2500000" min="0" max="15000000"/>
+                             </div>
+                         </div>
+                    </li>
+
+                    <li class="filter-item">
+                        <p class="filter-item-text">League</p>
+                        <div class="filter-item-select">
+                            <select>
+                                <option value="ligue">Ligue 1</option>
+                                <option value="prem">Premier League </option>
+                                <option value="liga">La Liga</option>
+                                <option value="seria">Seria A</option>
+                                <option value="bundes">Bundesliga</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="filler-search-bottom"></div>
+
+        <div class="footer-wrapper">          
+            <div class="footer-social">
+                <p class="contact-us"> Contact us on social networks!</p>
+                <a href="https://www.instagram.com"><img class="footer-social-img" src="imgs/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com"><img class="footer-social-img" src="imgs/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.youtube.com"><img class="footer-social-img" src="imgs/youtube.png" alt="Youtube"></a>
+                    <a href="https://www.tiktok.com/"><img class="footer-social-img" src="imgs/tiktok.png" alt="TikTok"></a>
+                    <a href="https://twitter.com/"><img class="footer-social-img" src="imgs/twitter.png" alt="Twitter"></a>
+            </div>
+
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms-conditions.html">Terms and Conditions</a>
+            </div>
+            <p class="footer-copyright"><span>&copy;</span> 2023 UltimateXI Advisor</p>
+        </div>
+    </body>
+</html>

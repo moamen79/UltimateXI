@@ -1,0 +1,62 @@
+/*
+Author: Moamen Ahmed
+Date: 2023-10-20
+*/
+.contact-form-wrapper {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+
+.contact-form-wrapper h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+.contact-form-input:focus {
+    outline: none;
+}
+
+.contact-form-submit {
+    width: 10%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    background-color: var(--text-color);
+    border: 5px solid var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form-submit:hover {
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+    border: 5px solid var(--secondary-color);
+}
